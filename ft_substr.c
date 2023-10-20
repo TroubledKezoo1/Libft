@@ -6,7 +6,7 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 02:37:06 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/18 02:58:20 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/20 15:02:42 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char *ft_substr(const char *s, unsigned int start, size_t len)
     size_t i;
 
 	i = 0;
-    char *str = malloc(sizeof(char) * (len + 1));
+    char *str = (char*)malloc(sizeof(char) * (len + 1));
     if (str == NULL)
 	{
         return NULL;
