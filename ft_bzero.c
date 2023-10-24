@@ -6,11 +6,12 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:30:59 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/16 14:43:04 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 21:56:21 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);

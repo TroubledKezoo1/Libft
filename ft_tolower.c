@@ -6,11 +6,11 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:28:39 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/16 15:29:11 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 21:20:28 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);

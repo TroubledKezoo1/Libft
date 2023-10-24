@@ -6,31 +6,21 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 04:02:46 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/17 04:45:20 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 23:48:26 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-char *ft_strcpy(char *dest, char *src)
+char	*ft_strdup(const char *src)
 {
-	size_t i;
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
-}
+	size_t	len;
+	char	*dest;
 
-char *ft_strdup(char *src)
-{
-	size_t len = ft_strlen(src);
-	char *dest = malloc(len + 1);
+	len = ft_strlen(src);
+	dest = (char *)malloc(len + 1);
 	if (dest == NULL)
 		return (NULL);
-	dest = ft_strcpy(dest, src);
+	ft_strlcpy(dest, src, ft_strlen(dest) + 1);
 	return (dest);
 }

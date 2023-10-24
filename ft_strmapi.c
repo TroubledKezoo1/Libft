@@ -6,13 +6,13 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 22:01:54 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/18 22:49:39 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 21:22:21 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		i;
 	char	*ret;

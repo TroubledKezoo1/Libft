@@ -6,13 +6,13 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:17:13 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/16 14:17:40 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 20:36:06 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-	if(c >= 0 && c <= 127)
+	if (c >= 0 && c <= 127)
 		return (1);
 	return (0);
 }

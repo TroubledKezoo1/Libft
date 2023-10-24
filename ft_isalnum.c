@@ -6,13 +6,14 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:15:21 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/16 14:16:45 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 23:28:26 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-	if (c >= '0' && c <= '9' || c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z')
+	if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a'
+			&& c <= 'z'))
 		return (1);
 	return (0);
 }

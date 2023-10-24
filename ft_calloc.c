@@ -6,16 +6,15 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 03:52:41 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/17 04:01:44 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 19:03:13 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-#include <stdlib.h>
-
-void *ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-	void *ptr;
+	void	*ptr;
 
 	ptr = malloc(count * size);
 	if (ptr == NULL)

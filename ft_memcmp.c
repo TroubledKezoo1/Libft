@@ -6,18 +6,20 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 16:26:52 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/16 16:30:35 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 23:40:07 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char	*s1_ptr = (unsigned char *)s1;
-	unsigned char	*s2_ptr = (unsigned char *)s2;
-	size_t	i;
-	
+	unsigned char	*s1_ptr;
+	unsigned char	*s2_ptr;
+	size_t			i;
+
+	s1_ptr = (unsigned char *)s1;
+	s2_ptr = (unsigned char *)s2;
 	i = 0;
 	if (n == 0)
 		return (0);

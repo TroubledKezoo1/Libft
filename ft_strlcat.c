@@ -6,13 +6,13 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:25:04 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/17 06:10:25 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 23:45:56 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-size_t	ft_strlcat(char *dest, char *src, size_t size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	unsigned int	c;
 	unsigned int	d;

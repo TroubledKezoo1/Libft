@@ -6,16 +6,16 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:56:43 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/16 16:18:27 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 21:22:06 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
-	
+
 	i = 0;
 	if (n == 0)
 		return (0);

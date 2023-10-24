@@ -6,11 +6,11 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:13:55 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/16 14:14:52 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 20:36:10 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

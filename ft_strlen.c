@@ -6,15 +6,16 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:19:31 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/16 17:12:10 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 21:16:37 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <stdlib.h>
 
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
+
 	i = 0;
 	while (s[i] != '\0')
 		i++;

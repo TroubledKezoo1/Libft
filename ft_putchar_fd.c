@@ -6,12 +6,12 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 22:50:06 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/18 23:01:21 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 21:24:45 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <fcntl.h>
+
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);

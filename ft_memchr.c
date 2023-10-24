@@ -6,12 +6,13 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 16:22:56 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/16 16:26:00 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/24 21:26:17 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-void *ft_memchr(const void *s, int c, size_t n)
+#include <stdlib.h>
+
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	while (n > 0)
 	{
