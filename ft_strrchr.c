@@ -6,7 +6,7 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:41:59 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/24 21:20:00 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/25 08:07:50 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int	size;
 
-	size = ft_strlen(s) + 1;
+	size = ft_strlen(s);
 	while (size >= 0)
 	{
-		if (s[size] == c)
+		if (s[size] == (char)c)
 			return ((char *)s + size);
 		size--;
 	}
-	return ((void *)0);
+	return (NULL);
 }

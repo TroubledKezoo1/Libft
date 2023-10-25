@@ -6,12 +6,13 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:10:49 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/24 23:15:23 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/25 05:52:57 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <stdio.h>
 # include <stdlib.h>
 
 typedef struct s_list

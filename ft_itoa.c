@@ -6,57 +6,52 @@
 /*   By: ysarac <yunusemresarac@yaani.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:27:29 by ysarac            #+#    #+#             */
-/*   Updated: 2023/10/24 20:36:17 by ysarac           ###   ########.fr       */
+/*   Updated: 2023/10/25 08:02:55 by ysarac           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	ft_numlen(int n)
+int	ft_numlen(int num)
 {
-	int	len;
+	int	i;
 
-	len = 0;
-	if (n == 0)
-	{
+	if (num == 0)
 		return (1);
-	}
-	if (n < 0)
+	i = 0;
+	while (num > 0 || num < 0)
 	{
-		len++;
-		n = -n;
+		num /= 10;
+		i++;
 	}
-	while (n)
-	{
-		n /= 10;
-		len++;
-	}
-	return (len);
+	return (i);
 }
 
 char	*ft_itoa(int n)
 {
 	int		len;
-	char	*str;
+	char	*ptr;
+	long	nbr;
 
-	len = ft_numlen(n);
-	str = malloc(sizeof(char) * (len + 1));
-	if (str == NULL)
-	{
-		return (NULL);
-	}
-	str[len] = '\0';
-	if (n == 0)
-		str[0] = '0';
+	nbr = n;
+	len = ft_numlen(nbr);
 	if (n < 0)
 	{
-		str[0] = '-';
-		n = -n;
+		len++;
+		nbr = -nbr;
 	}
-	while (len--)
+	ptr = (char *)malloc(sizeof(char) * len + 1);
+	if (!ptr)
+		return (NULL);
+	ptr[len] = '\0';
+	while (nbr > 0)
 	{
-		str[len] = (n % 10) + '0';
-		n /= 10;
+		ptr[--len] = nbr % 10 + 48;
+		nbr /= 10;
 	}
-	return (str);
+	if (n < 0)
+		ptr[0] = '-';
+	if (n == 0)
+		ptr[0] = '0';
+	return (ptr);
 }
